@@ -1,0 +1,22 @@
+[Reddit]
+username = 
+password = 
+client_id = 
+client_secret = 
+redirect_uri = http://127.0.0.1:8080
+user_agent = lotide notify bot
+
+[lotide]
+username = 
+password = 
+lotideurl = http://mylotidehost.com:3333
+
+[hitide]
+hitideurl = https://myhitdeinstance.com
+
+[hoot]
+hooturl = https://myhootinstance.com
+
+[discord]
+# discord webhook url for posting notices in a discord channel
+discordurl =  https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxx

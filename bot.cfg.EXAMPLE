@@ -1,0 +1,15 @@
+[BOT]
+environment = DEV
+dev_user = anyname
+
+[Config]
+loglevel = debug
+dbfile=processed.db
+logfile=bot.log
+main_loop_pause_secs=300
+postdelay_secs=600
+maxage_secs=10800
+minscore=5
+#allowedcommunities =
+#skipcommunities = 
+skipusers = redditmirrorbot
