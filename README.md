@@ -1,2 +1,2 @@
-# lotite_notifybot
+# lotide_notifybot
 Bot to nofify discord/reddit(future) of any new lotide posts in local communities
