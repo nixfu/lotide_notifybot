@@ -163,16 +163,16 @@ def process_lotide_post(post,lotideToken):
         return
 
     # skip posts by skipusers
-    if 'skipusers' in Settings['Config'] and author_name in Settings['Config']['skipusers']:
+    if 'skipusers' in Settings['Config'] and author_name.lower() in Settings['Config']['skipusers'].lower():
         return
     # skip non-local communities
     if not community_local:
         return
     # skip posts in skipcommunities
-    if 'skipcommunitieis' in Settings['Config'] and community_name in Settings['Config']['skipcommunities']:
+    if 'skipcommunities' in Settings['Config'] and community_name.lower() in Settings['Config']['skipcommunities'].lower():
         return
     # if allowedcommunities defined, skip posts not in allowedcommunities
-    if 'allowedcommunities' in Settings['Config'] and not community_name in Settings['Config']['allowedcommunities']:
+    if 'allowedcommunities' in Settings['Config'] and not community_name.lower() in Settings['Config']['allowedcommunities'].lower():
         return
 
     logger.info("%-20s: process post: %s AGE=%s SCORE=%s author=%s %s %s" % (community_name, time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(created_sec)), post_age, score, author_name, title, post_url))
